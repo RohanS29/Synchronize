@@ -11,6 +11,9 @@ html, body{
     font-size: 10px;
     color: #fcf9ff;
     font-family: "Raleway", sans-serif;
+
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 a{
@@ -193,14 +196,14 @@ h6{
 /* Following style is for the background */
 
 .app-section{
-    height: 1000px;
+    height: 1200px;
     width: 100vw;
     position: relative;
     background-image: linear-gradient(to right top, #1100ff 0%, #6f00ff 100%);
 }
 
 .backdrop{
-    height: 1000px;
+    height: 1200px;
     width: 100vw;
     background-image: linear-gradient(to left bottom, #ff004d 0%, #ff3d00 100%);
     
@@ -791,6 +794,8 @@ ion-icon:hover{
 }
 
 .why-section-left{
+    margin-top: 60px;
+
     height: 100%;
     flex: 0 0 50%;
 }
@@ -965,6 +970,8 @@ ion-icon:hover{
 }
 
 .card .card-header{
+    text-align: center;
+
     line-height: 1.5;
 }
 
@@ -979,4 +986,143 @@ ion-icon:hover{
     filter: blur(0);
 
     transform: scale(1);
+}
+
+/************************************** Help Section************************************/
+
+
+.support-section{
+    background-color: #0c1014;
+
+    height: 1000px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.support-header{
+    margin-top: 80px;
+}
+
+.support-article{
+    margin-top: 2%;
+    padding: 20px;
+
+    background-color: #0c1014;
+
+    width: 1200px;
+    height: 750px;
+
+    box-shadow: 0 0 40px 10px #000;
+
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container{
+    padding: 20px;
+}
+
+input[type="text"],
+input[type="submit"],
+input[type="email"],
+select{
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    
+    background-color: #f3e7d9;
+
+    border: none;
+}
+
+.check-box{
+    font-size: 16px;
+}
+
+input[type="checkbox"]{
+    margin-top: 20px;
+}
+
+input[type="submit"]{
+    background-color: #11dd22;
+
+    color: white;
+
+    border: none;
+
+    font-size: 20px;
+    font-weight: 500;
+}
+
+input[type="submit"]:hover{
+    opacity: 0.8;
+}
+
+.support-article img{
+    width: 50%;
+    height: 100%;
+}
+
+
+/************************************** Footer Section ********************************************/
+
+.footer{
+    height: 150px;
+    width: 100%;
+
+    background-color: #181b26;
+
+    padding: 0 5%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-nav{
+    height: 100%;
+    width: 100%;
+}
+
+.footer-top{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer-logo{
+    height: auto;
+    width: 60%;
+}
+
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 14px;
+}
+
+.footer-links li{
+    margin: 0 20px;
+
+    font-size: 18px;
+}
+
+.footer-bottom .footer-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: all 0.2s ease-out;
+}
+
+.footer-links a:hover{
+    color: #00ffe0;
 }
