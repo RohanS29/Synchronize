@@ -215,14 +215,14 @@ h6{
 /* Following style is for the background */
 
 .app-section{
-    height: 1200px;
+    height: 1000px;
     width: 100vw;
     position: relative;
     background-image: linear-gradient(to right top, #1100ff 0%, #6f00ff 100%);
 }
 
 .backdrop{
-    height: 1200px;
+    height: 1000px;
     width: 100vw;
     background-image: linear-gradient(to left bottom, #ff004d 0%, #ff3d00 100%);
     
@@ -232,8 +232,8 @@ h6{
 /* -------------------------------------------------------------------------------------------------------- */
 
 .app-window{
-    width: 1400px;
-    height: 85%;
+    width: 90%;
+    height: 85vh;
     position: absolute;
     background-color: rgba(0,0,0,0.9);
 
